@@ -65,7 +65,7 @@ test("6-c) Caso o IMC esteja entre 25 até 29.9, retornar 'Sobrepeso'.", () => {
     expect(aux.calcularIMC(70, 1.65)).toEqual('Sobrepeso');
 });
 
-test("6-d. Caso o IMC seja maior que 30, retornar 'Obesidade'.", () => {
+test("6-d) Caso o IMC seja maior que 30, retornar 'Obesidade'.", () => {
     expect(aux.calcularIMC(80, 1.50)).toEqual('Obesidade');
 });
 

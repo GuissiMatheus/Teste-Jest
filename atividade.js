@@ -2,11 +2,7 @@
  * Atividade de TTI - 23/03/2022
  * Aluno: Matheus Guissi
  * RA: 37791 
- */
-
-const funcoes = require('./atividade');
-
-/**
+ *
  * 1) Crie uma função e execute os seguintes testes:
  *  a. Devemos conseguir somar as notas e retornar a médias dos alunos;
  *  b. Se caso a nota for 0, a soma deve retornar 0;
@@ -57,9 +53,9 @@ function somarArray(array) {
  */
 function calcularIMC(peso, altura) {
     var imc = peso / (altura * altura);
-    if (imc <= 18.5) return 'Abaixo do Peso';
-    if (imc > 18.5 && imc <= 24.9) return 'Peso Normal';
-    if (imc > 25 && imc <= 29.9) return 'Sobrepeso';
+    if (imc < 18.5) return 'Abaixo do Peso';
+    if (imc >= 18.5 && imc <= 24.9) return 'Peso Normal';
+    if (imc >= 25 && imc <= 29.9) return 'Sobrepeso';
     if (imc >= 30) return 'Obesidade';
 }
 
